@@ -7,16 +7,152 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <header>
-            <div class="banner"></div>
-        </header>
+        <div class="wrapper">
 
-        <main>
+            <header>
+                <div class="phone">
+                    <img src="img/phone.png"  alt="phone">
+                    <span>(044)123-45-67</span>
+                    <span>(044)567-89-10</span>
+                </div>
+                <div class="login-form">
+                    <img class="whiteman" src="img/whiteman.png" alt="whiteman">
+                    <form class="authorization" action="#" method="post">
+                        <input class="field1" type="text" placeholder="логин">
+                        <input class="field2" type="password" placeholder="пароль">
+                        <input class="enter" type="submit" name="" id="" value="вход">
+                        <span>&nbsp;|&nbsp;</span>
+                        <a href="#">регистрация</a>
+                        <a href="#">забыли пароль?</a>
+                    </form>
+                </div>
+                <div class="options">
+                    <a class="home" href="#"></a>
+                    <a class="nav" href="#"></a>
+                    <a class="letter" href="#"></a>
+                </div>
+            </header>
 
-        </main>
+            <main>
+                <div class="banner">
+                    <a href="#"><img src="img/banner.png" alt="banner"></a>
+                </div>
 
-        <footer>
-            
-        </footer>
+                <div class="main-panel">
+                    <nav>
+                        <ul class="menu">
+                            <li class="company"><a href="#">О КОМПАНИИ</a></li>
+                            <li class="payment"><a href="#">ОПЛАТА</a></li>
+                            <li class="delivery"><a href="#">ДОСТАВКА</a></li>
+                            <li class="articles"><a href="#">СТАТЬИ</a></li>
+                            <li class="contacts"><a href="#">КОНТАКТЫ</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="basket">
+                        <img class="buy" src="img/basket.png" width="21" height="17" alt="buy">
+                        <span class="goods">товаров:</span>
+                        <span class="quantity">0</span>
+                        <span class="scriptext">на сумму:</span>
+                        <span class="scrip">0,00 грн.</span>
+                    </div>
+                </div>
+
+                <div class="holder-selection">
+                    <form action="#" class="form-first-form">
+                        <div class="first-form-header">
+                            <span>Диски:</span>
+                            <span>Поиск по автомобилю</span>
+                            <span>Шины:</span>
+                        </div>
+                        <div class="first-form-left">
+
+                                    <div>
+                                        <div class="holder">
+                                            <span class="param">Марка</span>
+                                            <span class="sub">авто:</span>
+                                        </div>
+                                            <select class="max-size" name="marka1">
+                                                <option label=" "></option>
+                                            </select>
+                                    </div>
+
+                                    <div>
+                                        <div class="holder">
+                                            <span class="param">Модель</span>
+                                            <span class="sub">автомобиля:</span>
+                                        </div>
+                                        <select class="max-size" name="model1">
+                                            <option label=" "></option>
+                                        </select>
+                                    </div>
+
+                                    <div>
+                                        <div class="holder">
+                                            <span class="param">Год выпуска</span>
+                                            <span class="sub">автомобиля:</span>
+                                            <select class="max-size" name="year1">
+                                                <option label=" "></option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="holder">
+                                            <span class="param">Комплектация:</span>
+                                            <select class="max-size" name="compl1">
+                                                <option label=" "></option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                        <div class="first-form-right">
+                                        <div>
+                                            <div class="holder">
+                                                <span class="param">Марка</span>
+                                                <span class="sub">авто:</span>
+                                            </div>
+                                            <select class="max-size" name="marka2">
+                                                <option label=" "></option>
+                                            </select>
+                                        </div>
+                                        <div>
+                                            <div class="holder">
+                                                <span class="param">Модель</span>
+                                                <span class="sub">автомобиля:</span>
+                                            </div>
+                                            <select class="max-size" name="model2">
+                                                <option label=" "></option>
+                                            </select>
+                                        </div>
+                                        <div>
+                                            <div class="holder">
+                                                <span class="param">Год выпуска</span>
+                                                <span class="sub">автомобиля:</span>
+                                            </div>
+                                            <select class="min-size" name="year2">
+                                                <option label=" "></option>
+                                            </select>
+                                        </div>
+                                        <div>
+                                            <div class="holder">
+                                                <span class="param">Комплектация:</span>
+                                            </div>
+                                            <select class="max-size" name="compl2">
+                                                <option label=" "></option>
+                                            </select>
+                                        </div>
+                                    </div>
+                        <div class="search">
+                                    <button>поиск...</button>
+                                </div>
+                    </form>
+                </div>
+
+            </main>
+
+            <footer>
+
+            </footer>
+        </div>
     </body>
 </html>
