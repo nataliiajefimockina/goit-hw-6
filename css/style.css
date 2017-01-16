@@ -102,14 +102,16 @@ header {
 }
 
 .enter {
-    padding-top: 4px;
+    height: 10px;
+    margin-top: 5px;
+    padding-top: 0;
     padding-left: 10px;
     border: 0;
     border-right: 1px solid #fff;
     background: none;
     color: #fff;
     font-size: 11px;
-    line-height: 11px;
+    line-height: 10px;
 }
 
 .registration {
@@ -126,7 +128,7 @@ header {
 }
 
 .pass {
-    margin-left: 14px;
+    margin-left: 16px;
     color: #bfbfbf;
     font-size: 12px;
 }
@@ -156,8 +158,6 @@ header {
 .main-panel {
     height: 32px;
     margin-bottom: 8px;
-    /*padding-top: 3px;
-    padding-bottom: 131px*/
     border: 1px solid #0a1030;
     border-radius: 6px;
     background: -moz-linear-gradient(top, rgba(80, 88, 96, 1) 0%, rgba(58, 64, 70, 1) 12%, rgba(27, 29, 32, 1) 51%, rgba(13, 14, 16, 1) 78%, rgba(2, 2, 2, 1) 100%);
@@ -168,19 +168,23 @@ header {
     background: linear-gradient(to bottom, rgba(80, 88, 96, 1) 0%, rgba(58, 64, 70, 1) 12%, rgba(27, 29, 32, 1) 51%, rgba(13, 14, 16, 1) 78%, rgba(2, 2, 2, 1) 100%);
     color: #b1bcc0;
     font-size: 14px;
+    -moz-box-shadow: inset 0 14px 7px -11px rgba(70, 77, 84, 1);
+    -webkit-box-shadow: inset 0 14px 7px -11px rgba(70, 77, 84, 1);
+    box-shadow: inset 0 14px 7px -11px rgba(70, 77, 84, 1);
     overflow: hidden;
     /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#505860', endColorstr='#020202', GradientType=0);*/
 }
 
 nav {
-    width: 510px;
+    width: 485px;
     margin-left: 127px;
     float: left;
     clear: both;
 }
 
 .menu {
-    margin-left: 4px;
+    height: 32px;
+    /*margin-left: 4px;*/
 }
 
 .menu li {
@@ -190,7 +194,7 @@ nav {
 .menu a {
     display: block;
     height: 26px;
-    padding: 3px 2px 0 15px;
+    padding: 3px 8px;
     border-radius: 14px;
     color: #b1bcc0;
     line-height: 26px;
@@ -313,10 +317,8 @@ nav {
 }
 
 .first-form-left {
-    width: 179px;
-    height: 90px;
-    /*margin-top: 2px;*/
-    /*margin-left: 16px;*/
+    width: 194px;
+    height: 91px;
     float: left;
 }
 
@@ -328,31 +330,34 @@ nav {
 }
 
 .first-form-right {
-    width: 179px;
-    height: 90px;
+    width: 194px;
+    height: 91px;
     margin-right: 12px;
     float: right;
 }
 
 .holder {
-    width: 75px;
+    width: 86px;
     float: left;
 }
 
 .param {
+    display: inline-block;
     margin-left: 13px;
     color: #000;
     font-family: Arial, sans-serif;
     font-size: 10px;
+    letter-spacing: -1px;
     line-height: 1px;
 }
 
 .sub {
+    display: inline-block;
     margin-left: 13px;
     color: #77858b;
     font-family: Arial, sans-serif;
     font-size: 9px;
-    line-height: 1px;
+    line-height: 11px;
 }
 
 .max-size {
@@ -362,12 +367,11 @@ nav {
 
 .min-size {
     width: 58px;
-    margin-left: 2px;
+    margin-left: 4px;
     float: left;
 }
 
 .search {
-    /*margin-top: -2px;*/
     margin-right: 14px;
     float: right;
     border: 0;
@@ -448,55 +452,85 @@ nav {
 .third-form {
     width: 265px;
     height: 134px;
+    margin-left: 0;
 }
 
 .third-form p {
+    display: block;
+    width: 103px;
+    height: 21px;
     margin-left: 8px;
+    float: left;
     color: #154468;
     font-family: Arial, sans-serif;
     font-size: 12px;
     font-weight: bold;
     letter-spacing: 2px;
     line-height: 24px;
+    overflow: hidden;
+}
+
+.third-form .holder {
+    width: 94px;
+}
+
+.third-form .param {
+    display: inline-block;
+    font-family: 'Lucida Sans Unicode Regular', sans-serif;
+    font-size: 9px;
+    font-weight: bold;
+    line-height: 9px;
+}
+
+.third-form .sub {
+    display: inline-block;
+    font-family: 'Lucida Sans Unicode Regular', sans-serif;
+    font-size: 8px;
+    line-height: 8px;
 }
 
 .third-form-left-col {
-    width: 141px;
-    height: 105px;
-    /*margin-top: 5px;*/
+    display: block;
+    width: 162px;
+    height: 103px;
     margin-left: 2px;
-    padding-right: 17px;
+    padding-right: 11px;
     float: left;
-    border-right: 1px solid #bdc6ca;
 }
 
-.third-form-left-col > div,
-.third-form-right-col > div {
-    margin-bottom: 1px;
-    line-height: 9px;
-    overflow: hidden;
+.third-form-left-col > div {
+    line-height: 18px;
+}
+
+.third-form-left-col .mid-size1 {
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+
+.mid-size1 {
+    display: inline-block;
+    width: 55px;
+    float: right;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
 }
 
 .third-form-right-col {
-    width: 80px;
-    margin-bottom: 3px;
-    padding-top: 3px;
+    width: 77px;
+    height: 105px;
+    margin-top: 6px;
+    border-left: 1px solid #bdc6ca;
     overflow: hidden;
 }
 
-.mid-size {
-    width: 52px;
-    float: right;
-    font-family: Arial, sans-serif;
-    font-size: 12px;
+.third-form-right-col > div {
+    line-height: 11px;
 }
 
-.fix-height {
-    margin-top: 9px;
-}
-
-.razmer2 {
-    margin: 10px 0 0 2px;
+.mid-size2 {
+    display: inline-block;
+    width: 55px;
+    margin-left: 13px;
     font-family: Arial, sans-serif;
     font-size: 11px;
 }
@@ -709,6 +743,8 @@ nav {
     width: 80px;
     height: 25px;
     margin: 14px 4px;
+    padding-top: 0;
+    padding-bottom: 0;
     border: 1px solid #0c3256;
     border-radius: 12px;
     background: linear-gradient(to bottom, rgba(31, 104, 135, .9) 0%, rgba(13, 52, 88, 1) 100%);
@@ -719,6 +755,10 @@ nav {
     color: #e5e9ea;
     font-family: Arial, sans-serif;
     font-size: 11px;
+    -moz-box-shadow: 3px 4px 5px -3px rgba(143, 141, 143, 1);
+    -webkit-box-shadow: 3px 4px 5px -3px rgba(143, 141, 143, 1);
+    box-shadow: 3px 4px 5px -3px rgba(143, 141, 143, 1);
+    cursor: pointer;
 }
 
     /* SPONSORS */
@@ -789,13 +829,13 @@ footer li:last-child a {
     border: 0;
 }
 
-footer .footer-select {
-    color: #52abcb;
-}
-
 footer p {
     color: #7f4740;
     font-family: Arial, sans-serif;
     font-size: 10px;
     text-align: center;
+}
+
+footer a:hover {
+    color: #52abcb;
 }
